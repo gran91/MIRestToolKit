@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #EAEAeA;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kles.view.RootLayoutController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="%main.file">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleNew" text="%main.new">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="%main.open">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#handleSave" text="%main.save">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="%main.saveas" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExit" text="%main.quit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="%main.configuration">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showMIWSOverview" text="%miws.title" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="%main.process">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showMDBREAD" text="MDBREADTools" />
+                    </items>
+                </Menu>
+                <Menu fx:id="skinmenu" mnemonicParsing="false" text="Skin" />
+                <Menu fx:id="langmenu" mnemonicParsing="false" text="%main.language">
+                    <items>
+                        <RadioMenuItem id="fr_FR" fx:id="menuFR" mnemonicParsing="false" text="%language.french">
+                            <graphic>
+                                <ImageView pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/resources/images/lng_FR.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </RadioMenuItem>
+                        <RadioMenuItem id="en_EN" fx:id="menuEN" mnemonicParsing="false" text="%language.english">
+                            <graphic>
+                                <ImageView pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/resources/images/lng_EN.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </RadioMenuItem>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="?">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="%about.title" />
+                    </items>
+                </Menu>
+            </menus>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </MenuBar>
+    </top>
+</BorderPane>
