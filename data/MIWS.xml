@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><MIWSs><MIWS><host>3kles-vm3.3kles.local</host><login>JCHAUT</login><name>3KLES_TST</name><password>Sgknoa1984</password><port>16201</port></MIWS></MIWSs>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><MIWSs><MIWS><host>3kles-vm3.3kles.local</host><login>JCHAUT</login><name>3KLES_TST</name><password>Sgknoa1984</password><port>16201</port></MIWS><MIWS><host>fr-s-alsd-bus01</host><login>MSRV020</login><name>ALEHOS_DVLP</name><password>M1s2r3v45</password><port>42819</port></MIWS></MIWSs>
